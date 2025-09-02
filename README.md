@@ -1,4 +1,5 @@
 # Reverse Shell Payload Generator
+<p align="center"><img src="https://iili.io/KqCOehF.png" alt="project-image"></p>
 
 [![GitHub stars](https://img.shields.io/github/stars/rahadhasan666/backdoor?style=social)](https://github.com/rahadhasan666/backdoor/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/rahadhasan666/backdoor?style=social)](https://github.com/rahadhasan666/backdoor/network/members)
@@ -29,7 +30,7 @@ The script operates by taking two essential inputs from the user: your attacking
 
 ## 💻 Supported Operating Systems
 
-*   **Generator Script (`reverse_shell_generator.py`):**
+*   **Generator Script (`python3 shell.py`):**
     *   Works flawlessly on any system with Python 3 installed:
         *   Windows
         *   Linux (Ubuntu, Debian, Fedora, Arch, etc.)
@@ -43,9 +44,9 @@ The script operates by taking two essential inputs from the user: your attacking
 
 Great news for mobile penetration testers!
 
-*   The **generator script (`reverse_shell_generator.py`) can be executed directly within Termux** on Android devices, allowing you to generate payloads on the go.
-    *   **Prerequisite:** Install Python in Termux: `pkg install python`
-    *   **Execution:** `python reverse_shell_generator.py`
+*   The **generator script (`python3 shell.py`) can be executed directly within Termux** on Android devices, allowing you to generate payloads on the go.
+    *   **Prerequisite:** Install Python in Termux: `pkg install python3`
+    *   **Execution:** `python3 shell.py`
 *   **Regarding the generated payloads:**
     *   `shell.ps1` (PowerShell) **will NOT function on Termux/Android**, as PowerShell is not a native component of these environments.
     *   `bash.sh` (Bash) **WILL work on Termux/Android**. You can use it to establish a reverse shell *from* your Termux environment *to* your listener. Ensure your `LHOST` is reachable from your Termux device and `LPORT` matches your listener port.
